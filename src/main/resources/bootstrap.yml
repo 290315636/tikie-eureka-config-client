@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      label: master
+      name: provider-config
+      profile: dev
+      uri: http://localhost:8001/
+
+# 用到配置中心的配置的都可以作为客户端：如provider等
+# 用得到的配置项当作启动配置文件，没有的配置项采用application中的配置
