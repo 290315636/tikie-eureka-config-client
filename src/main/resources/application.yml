@@ -3,3 +3,9 @@ server:
 spring:
   application:
     name: config-client
+    
+# 配置中心客户端服务化，注册到注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/
